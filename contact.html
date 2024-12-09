@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="main-container">
+    <header id="header">
+      <h1>Contact Us</h1>
+    </header>
+
+    <nav id="menu-tab">
+      <ul class="menu">
+        <li><a href="home.jsp" class="nav">Home</a></li>
+        <li><a href="takequiz.jsp" class="nav">Take Quiz</a></li>
+        <li><a href="ask.jsp" class="nav">Ask Ques.</a></li>
+        <li><a href="makequiz.jsp" class="nav">Make Quiz</a></li>
+        <li><a href="contact.html" class="nav">Contact</a></li>
+        <li><a href="register.jsp" class="nav">Register</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-content">
+      <section class="contact-section">
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          <p><strong>Address:</strong> H-109, Shakarpur</p>
+          <p><strong>Telephone:</strong> 91 638XXXX803</p>
+          <a href="mailto:guptaanushruti770@gmail.com">guptaanushruti770@gmail.com</a>
+         </div>
+
+        <form id="contact-form" action="quizcontact.jsp" method="POST">
+          <div class="form-row">
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone:</label>
+            <input id="phone" name="phone" type="tel">
+          </div>
+          <div class="form-row">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+
+</html>
